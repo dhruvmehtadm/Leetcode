@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Runtime |
 |---| ----- | -------- | ------- |
+|50|[ Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Python3](./solutions/50.%20Pow(x%2C%20n).py)|28 ms|
 |69|[ Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Python3](./solutions/69.%20Sqrt(x).py)|36 ms|
 |217|[ Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Python3](./solutions/217.%20Contains%20Duplicate.py)|128 ms|
 |595|[ Big Countries](https://leetcode.com/problems/big-countries/)|[MySQL](./solutions/595.%20Big%20Countries.mysql)|219 ms|
