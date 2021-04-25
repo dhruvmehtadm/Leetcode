@@ -3,6 +3,7 @@
 | # | Title | Solution | Runtime |
 |---| ----- | -------- | ------- |
 |1|[ Two Sum](https://leetcode.com/problems/two-sum/)|[C++](./solutions/1.%20Two%20Sum.cpp)|40 ms|
+|9|[ Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Python3](./solutions/9.%20Palindrome%20Number.py)|80 ms|
 |29|[ Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Python3](./solutions/29.%20Divide%20Two%20Integers.py)|36 ms|
 |32|[ Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)|[C++](./solutions/32.%20Longest%20Valid%20Parentheses.cpp)|4 ms|
 |50|[ Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Python3](./solutions/50.%20Pow(x%2C%20n).py)|28 ms|
