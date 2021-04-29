@@ -3,7 +3,6 @@ class Solution:
         n = len(num)
         nums = 0
         rem = 0
-        out = []
         for i in range(n):
             nums = nums + ((10**(n-1))*num[i])
             n = n-1
