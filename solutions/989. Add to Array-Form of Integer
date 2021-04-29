@@ -1,0 +1,12 @@
+class Solution:
+    def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+        n = len(num)
+        nums = 0
+        rem = 0
+        out = []
+        for i in range(n):
+            nums = nums + ((10**(n-1))*num[i])
+            n = n-1
+        nums = nums + k
+        b = [int(i) for i in str(nums)]
+        return b
