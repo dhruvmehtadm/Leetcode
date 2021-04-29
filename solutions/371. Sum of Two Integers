@@ -1,0 +1,8 @@
+class Solution:
+    def getSum(self, a: int, b: int) -> int:
+        out = []
+        out.append(a)
+        out.append(b)
+        ans = sum(out)
+        return ans
+        
