@@ -1,0 +1,22 @@
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        n = len(digits)
+        num = 0
+        #rem = 0
+        #out = []
+        for i in range(n):
+            num = num + ((10**(n-1))*digits[i])
+            n = n-1
+        num = num + 1
+        #out.append(num)
+        #return out
+        b = [int(i) for i in str(num)]
+        return b
+        '''
+        while(num!=0):
+            rem = num%10
+            out.append(rem)
+            num = num/10
+        
+        return out.reverse()
+        '''
