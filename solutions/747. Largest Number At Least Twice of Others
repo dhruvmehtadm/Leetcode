@@ -1,0 +1,15 @@
+class Solution:
+    def dominantIndex(self, nums: List[int]) -> int:
+        a = max(nums)
+        for i in range(len(nums)):
+            if(nums[i]==a):
+                b = i
+        nums.remove(a)
+        count = 0
+        for i in nums:
+            if(a>=2*i):
+                count+=1
+        if(count==len(nums)):
+            return b
+        else:
+            return -1
