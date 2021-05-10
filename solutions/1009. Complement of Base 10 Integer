@@ -1,0 +1,20 @@
+class Solution:
+    def bitwiseComplement(self, N: int) -> int:
+        l=[]
+        l1=[]
+        num=0
+        if(N==0):
+            return 2**N
+        while(N>=1):
+            if(N>=1):
+                l.append(N%2)
+            N = N//2
+        l = reversed(l)
+        for i in l:
+            if(i==1):
+                l1.append(0)
+            else:
+                l1.append(1)
+        for i in range(len(l1)):
+            num=num+((2**(len(l1)-i-1)*l1[i]))
+        return num
