@@ -1,0 +1,20 @@
+class Solution:
+    def findComplement(self, num: int) -> int:
+        l=[]
+        l1=[]
+        comp=0
+        if(num==0):
+            return 2**num
+        while(num>=1):
+            if(num>=1):
+                l.append(num%2)
+            num = num//2
+        l = reversed(l)
+        for i in l:
+            if(i==1):
+                l1.append(0)
+            else:
+                l1.append(1)
+        for i in range(len(l1)):
+            comp = comp + ((2**(len(l1)-i-1)*l1[i]))
+        return comp
