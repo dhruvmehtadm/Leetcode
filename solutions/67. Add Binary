@@ -1,0 +1,22 @@
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+        #using inbuilt function for decimal to binary
+        a1d = 0
+        b1d = 0
+        a1 = [int(i) for i in a]
+        b1 = [int(i) for i in b]
+        for i in range(len(a1)):
+            a1d = a1d + ((2**i)*a1[len(a1)-i-1])
+        for i in range(len(b1)):
+            b1d = b1d + ((2**i)*b1[len(b1)-i-1])
+        ans = a1d + b1d
+        fin = bin(ans).replace("0b", "")
+        return fin
+        
+        
+        #using inbuilt functions for conversion
+        a1 = int(a,2)
+        b1 = int(b,2)
+        ans = a1+b1
+        fin = bin(ans).replace("0b", "")
+        return fin
