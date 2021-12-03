@@ -1,0 +1,16 @@
+import math
+class Solution:
+    def maxProductDifference(self, nums: List[int]) -> int:
+        '''
+        mx = []
+        mn = []
+        mx.append(max(nums))
+        mn.append(min(nums))
+        nums.remove(max(nums))
+        nums.remove(min(nums))
+        mx.append(max(nums))
+        mn.append(min(nums))
+        return math.prod(mx) - math.prod(mn)
+        '''
+        nums.sort()
+        return ((nums[len(nums)-1]*nums[len(nums)-2]) - (nums[0]*nums[1]))
