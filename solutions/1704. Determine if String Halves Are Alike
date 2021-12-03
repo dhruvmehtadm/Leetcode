@@ -1,0 +1,18 @@
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        n = len(s)
+        v = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        b = s[0:n//2]
+        c = s[n//2:]
+        count_b = 0
+        count_c = 0
+        for i in b:
+            if i in v:
+                count_b+=1
+        for i in c:
+            if i in v:
+                count_c+=1
+        if(count_b==count_c):
+            return True
+        else:
+            return False
