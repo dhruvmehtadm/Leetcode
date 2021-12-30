@@ -1,0 +1,14 @@
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        h_tab = {}
+        i = 0
+        while i < len(nums):
+            if nums[i] not in h_tab:
+                h_tab[nums[i]] = 1
+            else:
+                h_tab[nums[i]] += 1
+                
+            if h_tab[nums[i]] > len(nums) // 2:
+                return nums[i]
+            else:
+                i += 1
