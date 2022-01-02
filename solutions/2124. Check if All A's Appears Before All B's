@@ -1,0 +1,7 @@
+class Solution:
+    def checkString(self, s: str) -> bool:
+        b = s.count('b')
+        for i in range(len(s)-1,len(s)-b-1,-1):
+            if(s[i]=='a'):
+                return False
+        return True
